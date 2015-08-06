@@ -27,7 +27,7 @@ public class Source {
 
 	public Syntax getSyntax() throws IOException {
 		reader.extractClassMethods();
-		reader.printClassMethods();
+//		reader.printClassMethods();
 		syntax.classes = reader.getClassMethods();
 		return syntax;
 	}

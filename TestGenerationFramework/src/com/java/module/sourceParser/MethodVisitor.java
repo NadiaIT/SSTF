@@ -23,7 +23,6 @@ public class MethodVisitor extends VoidVisitorAdapter<Object> {
 		method.startingLine = n.getBeginLine();
 		method.endingLine = n.getEndLine();
 		method.throwed = n.getThrows();
-
 		methodList.add(method);
 	}
 

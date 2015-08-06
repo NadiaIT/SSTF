@@ -129,6 +129,9 @@ public class ClassCreator {
 							.get(j).getType().toString().matches("int")) {
 						ASTHelper.addArgument(methodCall, new NameExpr("1"));
 					} else if (integrationTest.methodCallSequence.get(i).parameters
+							.get(j).getType().toString().matches("double")) {
+						ASTHelper.addArgument(methodCall, new NameExpr("1.0"));
+					} else if (integrationTest.methodCallSequence.get(i).parameters
 							.get(j).getType().toString().contains("List<")) {
 						ArrayList<VariableDeclarator> variables = new ArrayList<>();
 						VariableDeclarator methodCallVariableDeclaration = new VariableDeclarator(

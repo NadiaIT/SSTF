@@ -33,7 +33,7 @@ public class MainClass {
 			ParserConfigurationException, SAXException {
 		long start = System.currentTimeMillis();
 		TestCreationProperties properties = new TestCreationProperties(
-				"F:\\Codes\\ResearchCode_SSTF\\TestProperties_observer.txt");
+				"F:\\Codes\\ResearchCode_SSTF\\sample projects\\TestProperties_ATM.txt");
 		properties.readProperties();
 		File file = new File(properties.projectPath + "\\Details.txt");
 		FileOutputStream fis = new FileOutputStream(file);
